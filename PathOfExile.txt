@@ -1,0 +1,6 @@
+@echo off
+tasklist /nh /fi "imagename eq PathOfExile_x64Steam.exe" | find /i "PathOfExile_x64Steam.exe" > nul || (start steam://rungameid/238960)
+
+tasklist /nh /fi "imagename eq Sidekick.exe" | find /i "Sidekick.exe" > nul || (start "Sidekick.exe" "D:\Sidekick\Sidekick.exe")
+
+start "POE Trades Companion.ahk" "D:\POE-Trades-Companion-AHK-v-1-15-BETA_996\POE Trades Companion.ahk"
